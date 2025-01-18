@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Flow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#f8f7f5',
+                        'secondary': '#f1f5f9',
+                        'accent': '#007acc',
+                    },
+                    fontFamily: {
+                        'Grotesk': ['"Space Grotesk"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+
+<body class="font-Grotesk text-zinc-950 bg-stone-100">
+    <div class="flex">
+
+        <aside class="left-side fixed flex h-screen">
+            <div class="nav-icon w-14 bg-white border-r flex flex-col justify-between pt pb-3">
+                <!-- Top Icons Section -->
+                <div class="flex flex-col space-y-4 items-center">
+                    <!--logo icon-->
+                    <button class="text-zinc-950 p-1  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000" viewBox="0 0 256 256"><path d="M211,103.43l-70.13,28,49.47,63.61a8,8,0,1,1-12.63,9.82L128,141,78.32,204.91a8,8,0,0,1-12.63-9.82l49.47-63.61L45,103.43A8,8,0,0,1,51,88.57l69,27.61V40a8,8,0,0,1,16,0v76.18l69-27.61A8,8,0,1,1,211,103.43Z"></path></svg>                
+                    </button>
+                    <!--menu icons-->
+                    <!--exist projects-->
+                    <button class="icon-btn text-zinc-950 p-1.5 rounded-md hover:bg-stone-100 border border-transparent hover:border-slate-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M240,168v16H176V168a48,48,0,0,0-96,0v16H16V168a112,112,0,0,1,224,0Z" opacity="0.2"></path><path d="M184,168v16a8,8,0,0,1-16,0V168a40,40,0,0,0-80,0v16a8,8,0,0,1-16,0V168a56,56,0,0,1,112,0ZM128,80a88.1,88.1,0,0,0-88,88v16a8,8,0,0,0,16,0V168a72,72,0,0,1,144,0v16a8,8,0,0,0,16,0V168A88.1,88.1,0,0,0,128,80Zm0-32A120.13,120.13,0,0,0,8,168v16a8,8,0,0,0,16,0V168a104,104,0,0,1,208,0v16a8,8,0,0,0,16,0V168A120.13,120.13,0,0,0,128,48Z"></path></svg>
+                    </button>
+                    <!-- Branch -->
+                    <button class="icon-btn text-zinc-950 p-1.5 rounded-md hover:bg-stone-100 border border-transparent hover:border-slate-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#000" fill-opacity=".16" d="M8 6a2 2 0 1 1-4 0 2 2 0 0 1 4 0M6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4M18 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M18 16v-5.6A4.4 4.4 0 0 0 13.6 6H11m7 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M11 6l2-2m-2 2 2 2m-7 8a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 0V8m0 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/></svg>
+                    </button>
+                    <!-- Chat AI -->
+                    <button class="icon-btn text-zinc-950 p-1.5 rounded-md hover:bg-stone-100 border border-transparent hover:border-slate-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M96,174.19l56-32.33v36.95L107.5,204.5a48,48,0,0,1-66.4-64.08h0A48,48,0,0,0,51.5,148.5ZM204.5,107.5,160,81.81l-32,18.48,56,32.33V184a48,48,0,0,1-1.81,13h0A48,48,0,0,0,204.5,107.5ZM104,77.19,148.5,51.5a47.77,47.77,0,0,1,12.19-5v0A48,48,0,0,0,72,72v51.38l32,18.48Z" opacity="0.2"></path><path d="M224.32,114.24a56,56,0,0,0-60.07-76.57A56,56,0,0,0,67.93,51.44a56,56,0,0,0-36.25,90.32A56,56,0,0,0,69,217,56.39,56.39,0,0,0,83.59,219a55.75,55.75,0,0,0,8.17-.61,56,56,0,0,0,96.31-13.78,56,56,0,0,0,36.25-90.32ZM182.85,54.43a40,40,0,0,1,28.56,48c-.95-.63-1.91-1.24-2.91-1.81L164,74.88a8,8,0,0,0-8,0l-44,25.41V81.81l40.5-23.38A39.76,39.76,0,0,1,182.85,54.43ZM144,137.24l-16,9.24-16-9.24V118.76l16-9.24,16,9.24ZM80,72a40,40,0,0,1,67.53-29c-1,.51-2,1-3,1.62L100,70.27a8,8,0,0,0-4,6.92V128l-16-9.24ZM40.86,86.93A39.75,39.75,0,0,1,64.12,68.57C64.05,69.71,64,70.85,64,72v51.38a8,8,0,0,0,4,6.93l44,25.4L96,165,55.5,141.57A40,40,0,0,1,40.86,86.93ZM73.15,201.57a40,40,0,0,1-28.56-48c.95.63,1.91,1.24,2.91,1.81L92,181.12a8,8,0,0,0,8,0l44-25.41v18.48l-40.5,23.38A39.76,39.76,0,0,1,73.15,201.57ZM176,184a40,40,0,0,1-67.52,29.05c1-.51,2-1.05,3-1.63L156,185.73a8,8,0,0,0,4-6.92V128l16,9.24Zm39.14-14.93a39.75,39.75,0,0,1-23.26,18.36c.07-1.14.12-2.28.12-3.43V132.62a8,8,0,0,0-4-6.93l-44-25.4,16-9.24,40.5,23.38A40,40,0,0,1,215.14,169.07Z"></path></svg>
+                    </button>
+                    <!--theme-->
+                    <button class="icon-btn text-zinc-950 p-1.5 rounded-md hover:bg-stone-100 border border-transparent hover:border-slate-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M208,64v64a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V64a8,8,0,0,1,8-8H200A8,8,0,0,1,208,64Z" opacity="0.2"></path><path d="M232,88H216V64a16,16,0,0,0-16-16H48A16,16,0,0,0,32,64V88H16a8,8,0,0,0,0,16H32v24a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V104h16v50L131.6,182.65A16.07,16.07,0,0,0,120,198v34a8,8,0,0,0,16,0V198l100.4-28.68A16.07,16.07,0,0,0,248,154V104A16,16,0,0,0,232,88Zm-32,40H48V64H200v64Z"></path></svg>
+                    </button>
+        
+                    <!-- Share -->
+                    <button class="icon-btn text-zinc-950 p-1.5 rounded-md hover:bg-stone-100 border border-transparent hover:border-slate-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M208,200a32,32,0,1,1-32-32A32,32,0,0,1,208,200ZM176,88a32,32,0,1,0-32-32A32,32,0,0,0,176,88Z" opacity="0.2"></path><path d="M176,160a39.89,39.89,0,0,0-28.62,12.09l-46.1-29.63a39.8,39.8,0,0,0,0-28.92l46.1-29.63a40,40,0,1,0-8.66-13.45l-46.1,29.63a40,40,0,1,0,0,55.82l46.1,29.63A40,40,0,1,0,176,160Zm0-128a24,24,0,1,1-24,24A24,24,0,0,1,176,32ZM64,152a24,24,0,1,1,24-24A24,24,0,0,1,64,152Zm112,72a24,24,0,1,1,24-24A24,24,0,0,1,176,224Z"></path></svg>
+                    </button>
+                </div>
+        
+                <!-- Bottom Icons Section -->
+                <div class="bottom-icons flex flex-col space-y-4 items-center">
+                    <!-- Trash -->
+                    <button class="icon-btn text-zinc-950 p-1.5 rounded-md hover:bg-stone-100 border border-transparent hover:border-slate-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#000" fill-opacity=".16" d="m21 7-1 11.6c0 1.33-1.07 2.4-2.4 2.4H6.4C5.07 21 4 19.93 4 18.6L3 7"/><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m21 7-1 11.6c0 1.33-1.07 2.4-2.4 2.4H6.4C5.07 21 4 19.93 4 18.6L3 7m12 10-6-6m6 0-6 6M2.6 3h18.8A1.6 1.6 0 0 1 23 4.6v.8A1.6 1.6 0 0 1 21.4 7H2.6A1.6 1.6 0 0 1 1 5.4v-.8A1.6 1.6 0 0 1 2.6 3"/></svg>
+                    </button>
+        
+                    <!-- Alerts -->
+                    <button class="icon-btn text-zinc-950 p-1.5 rounded-md hover:bg-stone-100 border border-transparent hover:border-slate-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#000" fill-opacity=".16" fill-rule="evenodd" d="M20 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0m-6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0" clip-rule="evenodd"/><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M12 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16m0 0v4m-6 0h12m-4-12a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/></svg>
+                    </button>
+        
+                    <!-- User Profile -->
+                    <button class="icon-btn text-zinc-950 p-1.5 rounded-md hover:bg-stone-100 border border-transparent hover:border-slate-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#000" fill-opacity=".16" d="M8 6a4 4 0 1 1 8 0v1a4 4 0 0 1-8 0z"/><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 22c0-4.418-3.626-8-8.1-8h-1.8C6.626 14 3 17.582 3 22m9-11a4 4 0 0 1-4-4V6a4 4 0 1 1 8 0v1a4 4 0 0 1-4 4"/></svg>
+                    </button>
+                </div>
+            </div>
+        
+            <div class="view-icon-content w-64 bg-white border-r">
+                <div class="search px-4 py-1">
+                    <div class="relative">
+                        <input type="text" id="search-input" placeholder="Search..." class="w-full h-9 pl-9 pr-3 rounded-md bg-gray-100 text-sm text-gray-900 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-gray-300 transition-all duration-150 ease-in-out" />
+                        <svg class="absolute left-3 top-2.5 h-4 w-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        
+                        <!-- Search History and Suggestions Popup -->
+                        <div id="search-popup" class="hidden absolute top-full left-0 w-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg z-10">
+                            <div id="search-history" class="p-2">
+                                <ul class="space-y-1">
+                                    <!-- Search history items will be dynamically inserted here -->
+                                </ul>
+                            </div>
+                            <div id="search-suggestions" class="hidden p-2">
+                                <h3 class="text-xs font-semibold text-gray-500 mb-2">Suggestions</h3>
+                                <ul class="space-y-1">
+                                    <!-- Suggestions will be dynamically inserted here -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- all search end -->
+
+            </div>
+            <!-- the end of the second side-->
+        </aside>
+
+        </aside>
+
+        <main class="flex-1 h-screen ml-80 p-1 relative overflow-hidden">
+            <div class="w-full h-full absolute top-0 left-0 bg-[size:1rem_1rem] bg-[position:0_0,0.5rem_0.5rem]" style="background-image: radial-gradient(circle, rgb(192, 191, 191) 8%, transparent 9%), radial-gradient(circle, rgb(192, 191, 191) 8%, transparent 9%);"></div>
+            <div class="relative z-20 h-full overflow-y-auto ">
+                <head>
+                    <div class="sticky top-0  p-3">
+                        <button class="bg-stone-100 border border-gray-300 w-fit p-1 mb-3 rounded-full shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                        </button>
+                    </div>
+                </head>
+                <div id="work-container" class="rounded-lg p-6">
+                    <!-- Your work content here -->
+                    <!-- Add some placeholder content to demonstrate scrolling -->
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-bold">Work Content</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <!-- Repeat this paragraph 20 times to create scrollable content -->
+                        <!-- ... -->
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <!-- Repeat this paragraph 20 times to create scrollable content -->
+                        <!-- ... -->
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <!-- Repeat this paragraph 20 times to create scrollable content -->
+                        <!-- ... -->
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <!-- Repeat this paragraph 20 times to create scrollable content -->
+                        <!-- ... -->
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <!-- Repeat this paragraph 20 times to create scrollable content -->
+                        <!-- ... -->
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <!-- Repeat this paragraph 20 times to create scrollable content -->
+                        <!-- ... -->
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <!-- Repeat this paragraph 20 times to create scrollable content -->
+                        <!-- ... -->
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <!-- Repeat this paragraph 20 times to create scrollable content -->
+                        <!-- ... -->
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+
+
+        <!-- the end of the main-->
+        <aside class="right-side w-60 h-screen pt  border-l bg-white">
+            <div class="window-controls flex float-end">
+                <button  class="w-12 h-8 flex items-center justify-center hover:bg-stone-100 transition-colors focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-undo"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>                    
+                </button>
+                <button  class="w-12 h-8 flex items-center justify-center hover:bg-stone-100 transition-colors focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-redo"><path d="M21 7v6h-6"/><path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3l3 2.7"/></svg>
+                </button>
+                
+                <button id="minimize-btn" class="w-12 h-8 flex items-center justify-center hover:bg-stone-100 transition-colors focus:outline-none">
+                    <svg class="w-3 h-3  stroke-zinc-950" viewBox="0 0 12 12"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 6H10"  stroke-width="1" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button id="maximize-btn" class="w-12 h-8 flex items-center justify-center hover:bg-stone-100 transition-colors focus:outline-none">
+                    <svg class="w-3 h-3 maximize-icon   stroke-zinc-950" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="8" height="8"  stroke-width="1"/>
+                    </svg>
+                    <svg class="w-3 h-3 stroke-zinc-950 restore-icon hidden" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3V9H9V3H3Z M5 1H11V7"  stroke-width="1"/>
+                    </svg>
+                </button>
+                <button id="close-btn" class="w-12 h-9 flex items-center justify-center hover:bg-red-600 transition-colors focus:outline-none">
+                    <svg class="w-3 h-3 stroke-zinc-950" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3L9 9M3 9L9 3"  stroke-width="1" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </aside>
+
+
+
+    </div>
+
+    <script src="renderer.js"></script>
+    <script src="own.js"></script>
+</body>
+</html>
