@@ -40,7 +40,7 @@
 <body class="font-Grotesk text-zinc-950 bg-stone-100">
     <div class="flex">
 
-        <aside class="left-side fixed flex h-screen">
+        <aside class="flex h-screen w-72 fixed left-0 top-0 bg-white  ">
             <div class="nav-icon w-14 bg-white border-r flex flex-col justify-between pt pb-3">
                 <!-- Top Icons Section -->
                 <div class="flex flex-col space-y-4 items-center">
@@ -91,7 +91,7 @@
                 </div>
             </div>
         
-            <div class="view-icon-content w-64 bg-white border-r">
+            <div class="view-icon-content w-72  border-r ">
                 <div class="search px-4 py-1">
                     <div class="relative">
                         <input type="text" id="search-input" placeholder="Search..." class="w-full h-9 pl-9 pr-3 rounded-md bg-gray-100 text-sm text-gray-900 placeholder-gray-500 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-gray-300 transition-all duration-150 ease-in-out" />
@@ -123,25 +123,37 @@
 
         </aside>
 
-        <main class="  mx-2 w-96 flex-1 h-screen ml-80 p-1 relative overflow-hidden ">
-            <div class="w-full h-full absolute top-0 left-0 bg-[size:1rem_1rem] bg-[position:0_0]" style="background-image: linear-gradient(to right, rgb(192, 191, 191) 1px, transparent 1px), linear-gradient(to bottom, rgb(192, 191, 191) 1px, transparent 1px);"></div>
-            <div class="relative z-20 h-full overflow-y-auto">
-                <head>
-                    <div class="w-fit top-0  p-3 fixed flex flex-1 justify-between">
-                        <button class="bg-stone-100 border border-gray-300 w-fit p-1 mb-3 rounded-full shadow-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        <main class="flex-1 ml-72 mr-60 h-screen p-4 relative overflow-hidden">
+            <div class=" w-full h-full absolute top-0 left-0 bg-[size:1rem_1rem] bg-[position:0_0,0.5rem_0.5rem]" style="background-image: radial-gradient(circle, rgb(192, 191, 191) 8%, transparent 9%), radial-gradient(circle, rgb(192, 191, 191) 8%, transparent 9%); "></div>
+            <div class="relative z-20 h-full overflow-y-auto ">
+                <header class=" z-40 fixed top-0 left-72 right-60 p-3">
+                    <div class="flex justify-between items-center">
+                        <button class="bg-stone-100 border border-gray-300 p-2 rounded-full shadow-sm hover:bg-stone-200 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
                         </button>
-                        <div class="view">
-                            <button class="bg-stone-100 border border-gray-300 w-fit p-1 mb-3 rounded-full shadow-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-play"><rect x="4" y="4" width="16" height="16" rx="2"/><polygon points="12 18 16 12 12 8 12 12 6 18"/></svg>
+                        <div class="flex overflow-hidden bg-white border divide-x rounded-lg rtl:flex-row-reverse dark:bg-gray-900 dark:border-gray-700 dark:divide-gray-700">
+                            <button class="px-4 py-2 font-medium text-gray-600 transition-colors duration-200 sm:px-6 dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/>
+                                </svg>
                             </button>
-                            <button class="bg-stone-100 border border-gray-300 w-fit p-1 mb-3 rounded-full shadow-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film"><path d="M14 4H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h8a2 2 0
-                                    0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg>
+                            <button class="px-4 py-2 font-medium text-gray-600 transition-colors duration-200 sm:px-6 dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="px-4 py-2 font-medium text-gray-600 transition-colors duration-200 sm:px-6 dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 7L4 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 12L4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 17L4 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </button>
                         </div>
                     </div>
-                </head>
+                </header>
                 <div id="work-container" class="rounded-lg p-6">
                     <div class="space-y-2 justify-center items-center">
                         
@@ -149,11 +161,10 @@
                 </div>
             </div>
         </main>
-    
-
-
         <!-- the end of the main-->
-        <aside class="right-side w-60 h-screen pt  border-l bg-white ">
+
+
+        <aside class="w-60 h-screen fixed right-0 top-0 border-l bg-white ">
             <div class="window-controls flex float-end">
                 <button  class="w-12 h-8 flex items-center justify-center hover:bg-stone-100 transition-colors focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-undo"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>                    
