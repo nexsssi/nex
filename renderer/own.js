@@ -129,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initial update
     updateSearchHistory();
+
 });
 
 
@@ -145,3 +146,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 });
+
+

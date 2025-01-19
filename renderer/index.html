@@ -31,6 +31,9 @@
             font-style: normal;
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flowy@0.3.0/flowy.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flowy@0.3.0/flowy.min.js"></script>
+
 </head>
 
 
@@ -120,61 +123,28 @@
 
         </aside>
 
-        <main class="flex-1 h-screen ml-80 p-1 relative overflow-hidden">
-            <div class="w-full h-full absolute top-0 left-0 bg-[size:1rem_1rem] bg-[position:0_0,0.5rem_0.5rem]" style="background-image: radial-gradient(circle, rgb(192, 191, 191) 8%, transparent 9%), radial-gradient(circle, rgb(192, 191, 191) 8%, transparent 9%);"></div>
-            <div class="relative z-20 h-full overflow-y-auto ">
+        <main class="  mx-2 w-96 flex-1 h-screen ml-80 p-1 relative overflow-hidden ">
+            <div class="w-full h-full absolute top-0 left-0 bg-[size:1rem_1rem] bg-[position:0_0]" style="background-image: linear-gradient(to right, rgb(192, 191, 191) 1px, transparent 1px), linear-gradient(to bottom, rgb(192, 191, 191) 1px, transparent 1px);"></div>
+            <div class="relative z-20 h-full overflow-y-auto">
                 <head>
-                    <div class="sticky top-0  p-3">
+                    <div class="w-fit top-0  p-3 fixed flex flex-1 justify-between">
                         <button class="bg-stone-100 border border-gray-300 w-fit p-1 mb-3 rounded-full shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
                         </button>
+                        <div class="view">
+                            <button class="bg-stone-100 border border-gray-300 w-fit p-1 mb-3 rounded-full shadow-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-play"><rect x="4" y="4" width="16" height="16" rx="2"/><polygon points="12 18 16 12 12 8 12 12 6 18"/></svg>
+                            </button>
+                            <button class="bg-stone-100 border border-gray-300 w-fit p-1 mb-3 rounded-full shadow-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film"><path d="M14 4H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h8a2 2 0
+                                    0 0 0 2-2V6a2 2 0 0 0-2-2zm0 14H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></svg>
+                            </button>
+                        </div>
                     </div>
                 </head>
                 <div id="work-container" class="rounded-lg p-6">
-                    <!-- Your work content here -->
-                    <!-- Add some placeholder content to demonstrate scrolling -->
-                    <div class="space-y-4">
-                        <h2 class="text-2xl font-bold">Work Content</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <!-- Repeat this paragraph 20 times to create scrollable content -->
-                        <!-- ... -->
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <!-- Repeat this paragraph 20 times to create scrollable content -->
-                        <!-- ... -->
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <!-- Repeat this paragraph 20 times to create scrollable content -->
-                        <!-- ... -->
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <!-- Repeat this paragraph 20 times to create scrollable content -->
-                        <!-- ... -->
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <!-- Repeat this paragraph 20 times to create scrollable content -->
-                        <!-- ... -->
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <!-- Repeat this paragraph 20 times to create scrollable content -->
-                        <!-- ... -->
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <!-- Repeat this paragraph 20 times to create scrollable content -->
-                        <!-- ... -->
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <!-- Repeat this paragraph 20 times to create scrollable content -->
-                        <!-- ... -->
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="space-y-2 justify-center items-center">
+                        
                     </div>
                 </div>
             </div>
@@ -183,7 +153,7 @@
 
 
         <!-- the end of the main-->
-        <aside class="right-side w-60 h-screen pt  border-l bg-white">
+        <aside class="right-side w-60 h-screen pt  border-l bg-white ">
             <div class="window-controls flex float-end">
                 <button  class="w-12 h-8 flex items-center justify-center hover:bg-stone-100 transition-colors focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-undo"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></svg>                    
@@ -216,7 +186,8 @@
 
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
     <script src="renderer.js"></script>
     <script src="own.js"></script>
 </body>
