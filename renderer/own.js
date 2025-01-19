@@ -143,37 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initialize flowy
-    var flowy = new Flowy(document.getElementById("canvas"), onGrab, onRelease, onSnap, onCancel, spacing_x, spacing_y);
 
-    function onGrab(block) {
-        // This function runs when a block is grabbed
-        return true;
-    }
-
-    function onRelease() {
-        // This function runs when a block is released
-        return true;
-    }
-
-    function onSnap(block, first, parent) {
-        // This function runs when a block snaps with another one
-        return true;
-    }
-
-    function onCancel() {
-        // This function runs when a block is dropped in an invalid location
-        return true;
-    }
-
-    var spacing_x = 20;
-    var spacing_y = 80;
-
-    // Make blocks draggable
-    document.querySelectorAll('.item-to-drop').forEach(item => {
-        item.classList.add('create-flowy');
-        item.onclick = () => {
-            flowy.beginDrag(item.cloneNode(true));
-        };
-    });
 });
+
+
+
+
