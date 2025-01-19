@@ -1015,3 +1015,16 @@ video {
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity, 1));
 }
 
+
+.flowy {
+  min-height: 100%;
+  width: 100%;
+}
+
+.item-to-drop {
+  cursor: grab;
+}
+
+.item-to-drop:active {
+  cursor: grabbing;
+}
